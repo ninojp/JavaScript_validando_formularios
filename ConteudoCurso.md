@@ -72,6 +72,7 @@ Expressão   Descrição
 Caso você queira entender melhor sobre a criação de expressões regulares, recomendo o artigo [JavaScript replace: manipulando Strings e regex](https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex) e o curso [”Expressões regulares”](https://cursos.alura.com.br/course/expressoes-regulares).
 
 ### Aula 02: Nessa aula, você aprendeu como:
+
 Utilizar patterns;
 Criar expressões regulares;
 Selecionar vários elementos ao mesmo tempo;
@@ -84,3 +85,55 @@ Verificar CPFs com números repetidos.
 
 ### Aula 03: CPF: primeiro dígito - Video 1
 
+Nesta aula do curso "JavaScript: validando formulários", a instrutora Mônica Mazzochi Hillman aborda a validação do primeiro dígito verificador do CPF. Para isso, é criada uma função chamada "validaPrimeiroDigito" que realiza o cálculo da soma dos nove primeiros dígitos do CPF, multiplicados por um fator decrescente. Em seguida, é aplicada uma fórmula para obter o valor final da soma, que é comparado com a posição 9 do CPF. Caso sejam iguais, a função retorna "true", indicando que o CPF é válido. O uso dessa função é exemplificado no código principal, substituindo a função anteriormente utilizada.
+
+### Aula 03: CPF: segundo dígito - Video 2
+
+Nesta aula, o instrutor explica como realizar a validação do segundo dígito verificador do CPF. Ele mostra o código da função validaPrimeiroDigito() que já foi validada anteriormente e faz uma cópia dessa função, renomeando-a para validaSegundoDigito(). O instrutor explica as alterações necessárias nessa nova função, como a mudança do nome da função, do valor da variável multiplicador, do laço for e da posição do CPF a ser comparada no return. Em seguida, ele mostra como adicionar essa nova função no início do arquivo, dentro da função ehUmCPF(), para que ela seja chamada juntamente com as outras funções de validação. O instrutor também adiciona um if para testar as três funções de validação de uma vez e exibir a mensagem correta no console. Com as validações do CPF funcionando corretamente, o instrutor encerra essa etapa e menciona que a próxima etapa será a validação da idade do usuário.
+
+### Aula 03: Para saber mais: dígito verificador
+
+Quando estamos construindo um sistema que requer a criação de contas como o MoniBank, devemos validar os dados em que há essa possibilidade. Usando JavaScript nativamente, sem o uso de bibliotecas, iremos precisar fazer algumas validações manualmente, como a validação do CPF.
+
+Vamos atuar em cima de um CPF base que será: 451.055.040-54. A fórmula do cálculo dos últimos dígitos verificadores de um CPF é dividida em:
+
+Primeiro dígito
+Para descobrir o primeiro dígito você precisará recolher os 9 primeiros dígitos do CPF e multiplicar por números de 10 a 2, sequencialmente.
+
+Valor do CPF    4   5   1   0   5   5   0   4   0
+Sequência   10  9   8   7   6   5   4   3   2
+Resultado   40  45  8   0   30  25  0   12  0
+Depois, precisamos somar todos os valores gerados nas multiplicações entre eles. Nesse caso, a soma resultou em 160. Em seguida, será necessário multiplicar essa soma por 10, que gerou o número 1600. Por fim, devemos considerar o módulo da divisão desse número com 11: 5.
+
+Antes de decidirmos que esse é o primeiro dígito verificador, precisamos testar uma condição: Se o resultado for 10 ou 11, precisaremos zera-lo. Como não é o caso, podemos confirmar que 5 realmente é o primeiro dígito verificador do CPF base.
+
+Segundo dígito
+Para descobrir o segundo dígito você precisará recolher os 10 primeiros dígitos do CPF e multiplicar por números de 11 a 2, sequencialmente.
+
+Valor do CPF    4   5   1   0   5   5   0   4   0   5
+Sequência   11  10  9   8   7   6   5   4   3   2
+Resultado   44  50  9   0   35  30  0   16  0   10
+Em seguida, será necessário somar todos os valores resultados pela multiplicação novamente, e essa soma resultou em 194. Depois, multiplicamos essa soma por 10, para encontrar o valor 1940. Ao final, chegamos na etapa de encontrar o módulo da divisão por 11: o número 4.
+
+Novamente, precisamos verificar para caso o resultado for 10 ou 11, será necessário zera-lo. Como novamente não foi o caso, o número 4 realmente é o segundo dígito verificador do CPF base.
+
+### Aula 03: Validação idade - Video 3
+
+Nesta aula, o instrutor discute a importância de validar a idade dos clientes cadastrados no Monibank, garantindo que sejam maiores de 18 anos. Ele mostra como criar um arquivo separado chamado valida-idade.js no Visual Studio Code e como criar a função ehMaiorDeIdade() nesse arquivo. A função recebe o valor do campo de data de nascimento e converte para um formato legível pelo JavaScript. Em seguida, o instrutor mostra como importar essa função no arquivo script.js para utilizá-la.
+
+Dentro do arquivo script.js, o instrutor adiciona uma verificação para o campo de data de nascimento dentro da função verificaCampo(). Se o campo tiver o nome "aniversario" e não estiver vazio, a função ehMaiorDeIdade() é chamada para esse campo. O instrutor demonstra como testar a função no navegador, inserindo uma data de nascimento e verificando se o console exibe a informação correta.
+
+Posteriormente, o instrutor substitui o console.log por uma chamada para a função validaIdade() no arquivo valida-idade.js. Essa função verifica se a data atual é maior ou igual a 18 anos após a data de nascimento e retorna true ou false. O instrutor testa novamente a função no navegador, inserindo diferentes datas de nascimento e verificando se o console exibe o resultado correto.
+
+No próximo trecho do vídeo, será abordada a criação de mensagens personalizadas para cada erro.
+
+### Aula 03: Nessa aula, você aprendeu como:
+
+Validar os dígitos verificadores do CPF;
+Transformar fórmulas matemáticas em código;
+Lidar com datas em JavaScript;
+Construir comparações de datas para verificar maioridade.
+
+## Aula 04: 
+
+### Aula 04:  - Video 1
