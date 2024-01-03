@@ -42,7 +42,45 @@ Limitar a quantidade de caracteres em um elemento input;
 Controlar a quantidade mínima de caracteres do input;
 Transformar um campo em obrigatório.
 
-## Aula 02: Validadndo com JS
+## Aula 02: Validando com JS
 
 ### Aula 02: Pattern e Regex - Video 1
+
+Faça um resumo dessa aula
+Nesta aula, aprendemos como configurar o campo de CPF para seguir um padrão específico utilizando expressões regulares. A expressão regular utilizada é \d{3}.?\d{3}.?\d{3}-?\d{2}, que permite aceitar inputs com e sem pontuação. Além disso, também vimos outros atributos do campo de CPF, como maxLength, minLength e required, que definem o tamanho máximo e mínimo do campo e a obrigatoriedade de preenchimento.
+
+### Aula 02: AddEventListener - Video 2
+
+Nesta aula, o instrutor discute a necessidade de criar validações para campos de documentos brasileiros em um formulário HTML. É criado um arquivo JavaScript chamado "script.js" na pasta "js" do projeto e importado no arquivo HTML. A técnica de modularização é utilizada para separar cada motivação em arquivos diferentes. É criada a variável "camposDoFormulario" que recebe todos os elementos do HTML que possuem o atributo "required". É adicionado um evento de digitação em cada campo para realizar as validações. A função "verificaCampo" é criada como base para implementar a verificação no interior dessa função.
+
+### Aula 02: Verificar CPF - Video 3
+
+Nesta aula do curso "JavaScript: validando formulários", a instrutora Mônica Mazzochi Hillman ensina como implementar a validação de CPF em um formulário web. O arquivo script.js é importado no HTML como module e é criado um novo arquivo chamado valida-cpf.js para implementar a validação. Dentro desse arquivo, é criada a função ehUmCPF que remove os caracteres especiais do CPF e imprime o resultado no console. No script.js, é feito o import da função ehUmCPF e adicionado um evento de blur nos campos obrigatórios do formulário. Quando acionado, a função verificaCampo é chamada para verificar se o campo é o CPF e se possui pelo menos 11 caracteres. Se sim, a função ehUmCPF é chamada. Também é implementada a validação de números repetidos no CPF, utilizando a função validaNumerosRepetidos. Ao digitar um CPF válido, o console exibirá false, indicando que o CPF é válido. Se um CPF com números repetidos for digitado, o console exibirá true, indicando que o CPF é inválido. Essa é apenas uma validação básica e serão implementadas outras validações mais complexas no próximo trecho do curso.
+
+### Aula 02: Para saber mais: expressões regulares
+
+Ao analisarmos que o CPF possui um formato padrão, inserimos um atributo chamado pattern. O atributo pattern usa expressões regulares também conhecidas como regex, que é usado em Javascript. Dessa maneira, escolhemos o que deve ser aceito pelo nosso formulário.
+
+A expressão regular que utilizamos é a \d{3}\.?\d{3}\.?\d{3}-?\d{2}. Mas vamos por partes para entender o que isso significa:
+
+Expressão   Descrição
+\d{3}   Encontra correspondência com um número (equivalente a [0-9]) por 3 vezes.
+.?  Seguido por um ponto opcional.
+-?  Seguido por um hífen opcional.
+\d{2}   Encontra um número duas vezes.
+
+Caso você queira entender melhor sobre a criação de expressões regulares, recomendo o artigo [JavaScript replace: manipulando Strings e regex](https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex) e o curso [”Expressões regulares”](https://cursos.alura.com.br/course/expressoes-regulares).
+
+### Aula 02: Nessa aula, você aprendeu como:
+Utilizar patterns;
+Criar expressões regulares;
+Selecionar vários elementos ao mesmo tempo;
+Construir funções para cada elemento de uma lista;
+Detectar eventos do usuário;
+Importar funções de outros arquivos;
+Verificar CPFs com números repetidos.
+
+## Aula 03: Desenvolvendo Validações
+
+### Aula 03: CPF: primeiro dígito - Video 1
 
