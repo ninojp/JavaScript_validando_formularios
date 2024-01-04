@@ -134,6 +134,41 @@ Transformar fórmulas matemáticas em código;
 Lidar com datas em JavaScript;
 Construir comparações de datas para verificar maioridade.
 
-## Aula 04: 
+## Aula 04: Comunicanod ao Usuário
 
-### Aula 04:  - Video 1
+### Aula 04: Validity State - Video 1
+
+Nesta aula, o instrutor discute a validação de formulários em JavaScript. Ele mostra como é possível personalizar as mensagens de erro para cada tipo de validação. O instrutor explica que o atributo "valid" segue uma lógica diferente dos outros atributos de erro. Ele também mostra como remover a mensagem padrão exibida quando o campo está vazio. As customizações serão abordadas no próximo vídeo.
+
+ValidityState, exibe possíveis erros de validação que ocorrem automaticamente quando interagimos com esse formulário.
+
+### Aula 04: Mensagens customizadas - Video 2
+
+Nesta aula, a instrutora discute os erros mais comuns que podem ocorrer em um formulário e como identificá-los usando o Validity State. Os erros mais frequentes são: valueMissing, typeMismatch, patternMismatch, tooShort e customError. Ela também mostra como criar mensagens customizadas para cada um desses erros, utilizando um código disponível em um link fornecido. As mensagens são configuradas para serem exibidas nos respectivos campos do formulário.
+
+### Aula 04: Imprimindo mensagens - Video 3
+
+Nesta aula, aprendemos como imprimir mensagens de erro personalizadas em um formulário. O instrutor mostrou como criar uma lista de erros e suas respectivas mensagens. Foi apresentada a função verificaCampo(campo), que verifica os campos do formulário e exibe as mensagens de erro. Também foi discutido como exibir as mensagens na tela, utilizando o arquivo abrir-conta-form.html. Além disso, vimos como personalizar as mensagens de erro nos arquivos valida-idade.js e valida-cpf.js. Por fim, foi mencionado que é necessário redefinir o setCustomValidity() do campo para remover a mensagem de erro quando um dado válido for inserido. Com essas implementações, a aplicação é capaz de exibir mensagens de erro personalizadas de acordo com os erros encontrados nos campos do formulário.
+
+### Aula 04: localStorage - Video 4
+
+Nesta aula, o instrutor aborda como lidar com os dados preenchidos corretamente em um formulário. Ele mostra como selecionar o formulário no arquivo HTML usando o atributo de dados e adiciona um evento de envio ao formulário no arquivo JavaScript. Dentro desse evento, ele cria uma lista de respostas com os valores preenchidos nos campos do formulário. Em seguida, ele usa o localStorage para salvar esses dados em formato JSON. Por fim, o usuário é redirecionado para a próxima etapa do formulário.
+
+### Aula 04: Para saber mais: localStorage e DOM
+
+Durante o projeto selecionamos elementos do HTML para pegar seus valores, para criar novas validações, para inserir textos, entre outros casos. Para conseguir realizar essas ações, estamos interagindo com o Document Object Model (DOM). Isso é algo que abordamos em vários projetos mas temos um curso em específico pra te ajudar nesse assunto: [JavaScript: manipulando o DOM](https://cursos.alura.com.br/course/javascript-manipulando-dom), não deixe de dar uma passadinha por lá.
+
+Para armazenamento dos dados do formulário foi utilizado o localStorage. O objeto localStorage permite salvar pares de chave/valor no navegador sem data de expiração, ou seja, os dados não são excluídos quando o navegador é fechado e ficam disponíveis para navegação futura. Você pode se aprofundar mais no assunto com o treinamento [JavaScript na Web: armazenando dados no navegador](https://cursos.alura.com.br/course/javascript-web-armazenando-dados-navegador) do instrutor Pedro Marins e com o artigo ["Armazenadores de dados do navegador"](https://www.alura.com.br/artigos/armazenadores-de-dados-do-navegador) do Luan Alves.
+
+### Aula 04: Nessa aula, você aprendeu como:
+
+Encontrar as validações padrões que existem no JavaScript com o Validity State;
+Interpretar cada tipo de erro;
+Criar mensagens customizadas;
+Remover o comportamento padrão de erro do HTML;
+Mostrar as mensagens customizadas na página;
+Salvar dados no localStorage.
+
+## Aula 05: 
+
+### Aula 05:  - Video 1
