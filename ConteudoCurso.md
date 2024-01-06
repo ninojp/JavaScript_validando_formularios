@@ -169,6 +169,28 @@ Remover o comportamento padrão de erro do HTML;
 Mostrar as mensagens customizadas na página;
 Salvar dados no localStorage.
 
-## Aula 05: 
+## Aula 05: Capturando Fotos
 
-### Aula 05:  - Video 1
+### Aula 05: Iniciar câmera - Video 1
+
+Nesta aula, o instrutor explica como iniciar a câmera para capturar fotos em um formulário. Ele mostra o código HTML e CSS da página e explica como configurar a interação usando JavaScript. É criado um arquivo camera.js com variáveis para os elementos da câmera. Em seguida, é utilizada a função navigator.mediaDevices.getUserMedia() para solicitar acesso à câmera do usuário e inicializar o vídeo. O código também configura a exibição dos elementos na tela. O próximo passo é configurar a aplicação para tirar uma foto quando o botão for acionado e exibi-la na tela.
+
+### Aula 05: Captura - Video 2
+
+Nesta aula, o instrutor explica como adicionar a função de captura de foto em um projeto de reconhecimento facial. Ele mostra como selecionar os elementos da página HTML onde a foto será exibida, como o botão de tirar foto, a área do canvas onde a foto será mostrada e o bloco de texto onde será exibida a mensagem de conclusão da captura. Em seguida, ele cria uma variável vazia para armazenar a URL da imagem capturada. O instrutor também mostra como adicionar a interação entre o botão de tirar foto e a exibição da imagem, utilizando um evento de clique e o método drawImage para desenhar a imagem da câmera no canvas. Ele finaliza mostrando como transformar a imagem do canvas em uma URL e exibir a mensagem de conclusão da captura.
+
+### Aula 05: Salvar foto - Video 3
+
+Nesta aula, aprendemos como salvar dados de um formulário no localStorage. Primeiro, preenchemos os campos do formulário e salvamos os dados no localStorage. Em seguida, inserimos a URL da foto tirada juntamente com os dados já salvos anteriormente. Utilizamos o método document.querySelector() para selecionar o botão de envio dos dados e adicionamos um evento de clique a ele. Dentro da função de callback desse evento, obtivemos os dados já salvos anteriormente, adicionamos a URL da foto tirada aos dados e atualizamos os dados no localStorage. Por fim, redirecionamos para a página final do formulário.
+
+### Aula 05: Nessa aula, você aprendeu como:
+
+Iniciar camêra do usuário no navegador;
+Capturar fotografia;
+Lidar com eventos de click;
+Aplicar um fluxo de navegação escondendo e mostrando elementos;
+Inserir novos dados no localStorage.
+
+### Aula 05: Conclusão - Video 3
+
+Nesta aula, o instrutor agradece ao estudante por acompanhar o desenvolvimento do projeto de validações de cadastro de pessoa usuária no Monibank. Ele revisa tudo o que foi aprendido durante a construção das validações, mostrando como as mensagens de erro são exibidas quando os campos não são preenchidos corretamente e como as mensagens de erro desaparecem quando os campos são preenchidos corretamente. Além disso, o instrutor mostra como a aplicação redireciona o usuário para a tela de reconhecimento facial, onde é necessário permitir o acesso à câmera e tirar uma foto para concluir o cadastro. No final, o instrutor comemora o trabalho árduo de criar todas as validações e incentiva o estudante a avaliar o conteúdo e compartilhar o projeto nas redes sociais da Alura.
